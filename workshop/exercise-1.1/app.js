@@ -16,7 +16,7 @@ body.style.backgroundImage =
 body.style.color = "white";
 body.style.fontSize = "40px";
 body.style.height = "100vh";
-body.style.width = "100vw";
+body.style.width = "100vw"
 
 let gameOver = false;
 let gameWon = false;
