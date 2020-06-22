@@ -2,17 +2,19 @@ console.log("exercise 2.1");
 
 const main = document.getElementById("main");
 
-main.style.height = "50vh";
-main.style.width = "50vh";
+// main.style.height = "50vh";
+// main.style.width = "50vh";
 
-let turnGreen = function () {
+let turnGreen = function (event) {
+  console.log(event.target);
   const buttonId = event.target.id;
+  console.log(buttonId);
   document.getElementById(buttonId).classList.add("green");
 };
 
 for (let i = 1; i <= 20; i++) {
   const btn = document.createElement("button");
-  btn.innerHTML = "click me";
+  btn.innerHTML = i;
   btn.id = `btn-${i}`;
   main.appendChild(btn);
   btn.addEventListener("click", turnGreen);
